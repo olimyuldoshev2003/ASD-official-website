@@ -8,6 +8,7 @@ import Home from "./pages/Home/Home";
 import NotFound from "./pages/NotFound/NotFound";
 import Volunteers from "./pages/Volunteers/Volunteers";
 import Location from "./pages/Location/Location";
+import ForgetPassword from "./pages/ForgetPassword/ForgetPassword";
 
 //For AOS animation
 // import AOS from 'aos';
@@ -53,8 +54,16 @@ function App() {
            path: "about",
            element: <About />,
          },
+         {
+           path: "forgetPassword",
+           element:<ForgetPassword/>
+         }
        ],
      },
+     {
+       path: "*",
+       element:<NotFound/>
+     }
    ]);
 
    return (

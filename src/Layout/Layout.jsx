@@ -405,7 +405,7 @@ function Layout() {
                         id="CheckoxPasswordLogin"
                       />
                     </div>
-                    <Link to="" className="underline">
+                    <Link to="/forgetPassword" className="underline">
                       Forget Password
                     </Link>
                   </div>
@@ -483,7 +483,9 @@ function Layout() {
                         placeholder="Enter your first name"
                         required={true}
                         value={firstNameSignUp}
-                        onChange={(event)=>setFirstNameSignUp(event.target.value)}
+                        onChange={(event) =>
+                          setFirstNameSignUp(event.target.value)
+                        }
                       />
                     </div>
                     <div className="label_input_last_name flex flex-col items-start gap-3">
@@ -495,7 +497,9 @@ function Layout() {
                         placeholder="Enter your last name"
                         required={true}
                         value={lastNameSignUp}
-                        onChange={(event)=>setLastNameSignUp(event.target.value)}
+                        onChange={(event) =>
+                          setLastNameSignUp(event.target.value)
+                        }
                       />
                     </div>
                     {/* <div className="label_input_last_name flex flex-col items-start gap-3">
@@ -517,7 +521,7 @@ function Layout() {
                         placeholder="Enter your email"
                         required={true}
                         value={emailSignUp}
-                        onChange={(event)=>setEmailSignUp(event.target.value)}
+                        onChange={(event) => setEmailSignUp(event.target.value)}
                       />
                     </div>
                   </div>
@@ -545,7 +549,9 @@ function Layout() {
                         className="outline-none border-none p-[5px_30px] text-[#000] placeholder:text-[#000] rounded-[20px]"
                         required={true}
                         // value={genderSignUp}
-                        onChange={(event)=>setGenderSignUp(event.target.value)}
+                        onChange={(event) =>
+                          setGenderSignUp(event.target.value)
+                        }
                       >
                         <option value="">---Gender---</option>
                         <option value="">Male</option>
@@ -563,7 +569,9 @@ function Layout() {
                         placeholder="Enter your number phone"
                         required={true}
                         value={numberPhoneSignUp}
-                        onChange={(event)=>setNumberPhoneSignUp(event.target.value)}
+                        onChange={(event) =>
+                          setNumberPhoneSignUp(event.target.value)
+                        }
                       />
                     </div>
                     <div className="label_input_date_of_birthday flex flex-col items-start gap-3">
@@ -575,7 +583,9 @@ function Layout() {
                         className="outline-none border-none p-[5px_30px] text-[#000] placeholder:text-[#000] rounded-[20px]"
                         required={true}
                         value={dateOfBirthdaySignUp}
-                        onChange={(event)=>setDateOfBirthdaySignUp(event.target.value)}
+                        onChange={(event) =>
+                          setDateOfBirthdaySignUp(event.target.value)
+                        }
                       />
                     </div>
                   </div>
@@ -592,7 +602,9 @@ function Layout() {
                       placeholder="Tell us about yourself"
                       required={true}
                       value={aboutYourselfSignUp}
-                      onChange={(event)=>setAboutYourselfSignUp(event.target.value)}
+                      onChange={(event) =>
+                        setAboutYourselfSignUp(event.target.value)
+                      }
                     ></textarea>
                   </div>
 
@@ -607,7 +619,7 @@ function Layout() {
                       placeholder="Your address"
                       required={true}
                       value={addressSignUp}
-                      onChange={(event)=>setAdressSignUp(event.target.value)}
+                      onChange={(event) => setAdressSignUp(event.target.value)}
                     ></textarea>
                   </div>
                 </div>
@@ -691,7 +703,9 @@ function Layout() {
                         placeholder="Enter your password"
                         required={true}
                         value={passwordSignUp}
-                        onChange={(event)=>setPasswordSignUp(event.target.value)}
+                        onChange={(event) =>
+                          setPasswordSignUp(event.target.value)
+                        }
                       />
                       <div className="block_show_and_hide flex items-center gap-2">
                         <label htmlFor="CheckboxPasswordSignUp">
@@ -716,7 +730,9 @@ function Layout() {
                         placeholder="Enter your password again"
                         required={true}
                         value={confirmPasswordSignUp}
-                        onChange={(event)=>setConfirmPasswordSignUp(event.target.value)}
+                        onChange={(event) =>
+                          setConfirmPasswordSignUp(event.target.value)
+                        }
                       />
                       <div className="block_show_and_hide flex items-center gap-2">
                         <label htmlFor="CheckboxConfPasswordSignUp">
